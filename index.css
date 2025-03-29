@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background: transparent;
+    position: sticky;
+    top: 0;
+    display: flex;
+    font-size: 20px;
+    z-index: 2;
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    height: 100%;
+}
+
+.bg-image {
+    position: relative;
+    background-image: url(Media/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    filter: blur(3px);
+    padding: 10px;
+
+}
+
+.bg-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 50px;
+}
+
+.contact-me {
+    position: fixed;
+    bottom: 30;
+    right: 20;
+}
+
+.contact-me>button {
+    background: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+}
