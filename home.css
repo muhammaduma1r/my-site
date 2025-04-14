@@ -14,7 +14,7 @@ header {
     position: sticky;
     top: 0;
     display: flex;
-    font-size: 20px;
+    font-size:large;
     z-index: 2;
     align-items: center;
     padding: 10px;
@@ -23,6 +23,11 @@ header {
 a {
     text-decoration: none;
     color: white;
+}
+
+button{
+    color: white;
+    cursor: pointer;
 }
 
 main {
@@ -58,7 +63,7 @@ main {
     right: 20;
 }
 
-.contact-me>button {
+.contact-me > a > button {
     background: transparent;
     padding: 10px;
     border-radius: 20px;
@@ -68,4 +73,14 @@ main {
 footer {
     text-align: center;
     padding: 5px;
+    font-size: medium;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        font-size: medium;
+    }
+    footer{
+        font-size: small;
+    }
 }
