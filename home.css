@@ -6,6 +6,7 @@
 
 body {
     color: white;
+    background-color: black;
     background-image: url(Media/space.jpg);
     background-repeat: no-repeat;
     background-size: cover;
