@@ -5,16 +5,18 @@
 }
 
 body {
-    background-color: black;
     color: white;
+    background-image: url(Media/space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 header {
-    background: transparent;
+    background-color: black;
     position: sticky;
     top: 0;
     display: flex;
-    font-size: 20px;
     z-index: 2;
     align-items: center;
     padding: 10px;
@@ -33,34 +35,22 @@ button{
 
 main {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bg-image {
-    position: relative;
-    background-image: url(Media/bg-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    filter: blur(3px);
-    padding: 10px;
-
-}
-
-.bg-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.content {
+    background: transparent;
     text-align: center;
     border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.2);
     padding: 50px;
+    margin: 50px;
 }
 
 .contact-me {
     position: fixed;
-    bottom: 30;
+    bottom: 40;
     right: 20;
 }
 
@@ -72,20 +62,21 @@ main {
 }
 
 footer {
+    background-color: black;
     text-align: center;
     padding: 5px;
     font-size: medium;
 }
 
 @media only screen and (max-width: 600px) {
-    .bg-content {
-        padding: 20px;
-        font-size: 10px;
-    }
     header{
         font-size: medium;
     }
     footer{
         font-size: small;
+    }
+    .content{
+        font-size: 10px;
+        padding: 20px;
     }
 }
