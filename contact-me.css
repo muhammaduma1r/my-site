@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: my-font;
+    src: url(Lato/Lato-Regular.ttf);
+}
+
 body {
     color: white;
     background-color: black;
@@ -11,6 +16,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family: my-font;
 }
 
 header {
@@ -30,7 +36,7 @@ a {
     color: white;
 }
 
-button{
+button {
     color: white;
     cursor: pointer;
 }
@@ -48,19 +54,21 @@ main {
     border: 2px solid white;
     padding: 50px;
     margin: 50px;
+    font-size: x-large;
 }
 
-.contact-me {
+.fixed-btn {
     position: fixed;
-    bottom: 40;
-    right: 20;
+    bottom: 50;
+    right: 10;
 }
 
-.contact-me> a > button {
+.fixed-btn button {
     background: transparent;
     padding: 10px;
     border-radius: 20px;
     border-color: white;
+    font-size: small;
 }
 
 footer {
@@ -72,14 +80,19 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    header{
+    header {
         font-size: medium;
     }
-    footer{
+
+    footer {
         font-size: small;
     }
-    .content{
-        font-size: 10px;
-        padding: 20px;
+
+    .content {
+        font-size: large;
+      }
+
+    .fixed-btn button{
+        font-size: x-small;
     }
 }
