@@ -24,12 +24,14 @@ header {
     position: sticky;
     top: 0;
     display: flex;
+    justify-content: space-between;
     z-index: 2;
     align-items: center;
     padding: 10px;
     font-size: large;
     height: 5vh;
 }
+
 
 a {
     text-decoration: none;
@@ -39,6 +41,7 @@ a {
 button {
     color: white;
     cursor: pointer;
+    background: transparent;
 }
 
 main {
@@ -49,6 +52,10 @@ main {
 }
 
 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: transparent;
     text-align: center;
     border: 2px solid white;
@@ -57,18 +64,25 @@ main {
     font-size: x-large;
 }
 
-.fixed-btn {
-    position: fixed;
-    bottom: 50;
-    right: 10;
+.content>.home-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10 30 10 30;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: small;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.fixed-btn button {
-    background: transparent;
-    padding: 10px;
-    border-radius: 20px;
-    border-color: white;
-    font-size: small;
+.content>.home-btn img {
+    margin-right: 5px;
+}
+
+.content>.home-btn span {
+    margin-top: 2px;
 }
 
 footer {
@@ -90,9 +104,6 @@ footer {
 
     .content {
         font-size: large;
-      }
-
-    .fixed-btn button{
-        font-size: x-small;
     }
+
 }
