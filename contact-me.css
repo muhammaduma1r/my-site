@@ -6,13 +6,13 @@
 
 @font-face {
     font-family: my-font;
-    src: url(Lato/Lato-Regular.ttf);
+    src: url(My-Fonts/Lato/Lato-Regular.ttf);
 }
 
 body {
     color: white;
     background-color: black;
-    background-image: url(Media/space.jpg);
+    background-image: url(Media/bg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -44,6 +44,10 @@ button {
     background: transparent;
 }
 
+i {
+    vertical-align: middle;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -54,8 +58,8 @@ main {
 .content {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     background: transparent;
     text-align: center;
     border: 2px solid white;
@@ -64,25 +68,12 @@ main {
     font-size: x-large;
 }
 
-.content>.home-btn button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+.home-btn button {
     padding: 10 30 10 30;
     margin-top: 20px;
     border-radius: 20px;
-    font-size: small;
     border-color: white;
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-.content>.home-btn img {
-    margin-right: 5px;
-}
-
-.content>.home-btn span {
-    margin-top: 2px;
 }
 
 footer {

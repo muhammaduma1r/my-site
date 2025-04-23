@@ -6,13 +6,13 @@
 
 @font-face {
     font-family: my-font;
-    src: url(Lato/Lato-Regular.ttf);
+    src: url(My-Fonts/Lato/Lato-Regular.ttf);
 }
 
 body {
     color: white;
     background-color: black;
-    background-image: url(Media/space.jpg);
+    background-image: url(Media/bg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,6 +39,11 @@ a {
 button {
     color: white;
     cursor: pointer;
+    background: transparent;
+}
+
+i {
+    vertical-align: middle;
 }
 
 main {
@@ -63,7 +68,6 @@ main {
 }
 
 .contact-btn button {
-    background: transparent;
     padding: 10 30 10 30;
     margin-top: 20px;
     border-radius: 20px;
