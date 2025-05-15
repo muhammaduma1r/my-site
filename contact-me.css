@@ -13,12 +13,8 @@
 }
 
 body {
-    color: white;
-    background-color: black;
-    background-image: url(Media/bg-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    color: black;
+    background-color: white;
     font-family: my-font;
 }
 
@@ -30,30 +26,26 @@ header {
     z-index: 2;
     align-items: center;
     padding: 10px;
-    background-color: black;
     height: 5vh;
+    background-color: white;
+    border-bottom: 1px solid black;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 button {
-    color: white;
+    color: black;
     cursor: pointer;
     background: transparent;
-}
-
-i {
-    vertical-align: middle;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
 }
 
 
@@ -62,29 +54,18 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: transparent;
     text-align: center;
-    border: 2px solid white;
-    padding: 50px;
     margin: 50px;
     font-size: x-large;
-}
-
-.contact-btn button {
-    padding: 10 30 10 30;
-    margin-top: 20px;
-    border-radius: 20px;
-    border-color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-
 }
 
 footer {
     text-align: center;
     padding: 5px;
     font-size: medium;
-    background-color: black;
     height: 5vh;
+    background-color: white;
+    border-top: 1px solid black;
 }
 
 @media only screen and (max-width: 600px) {
@@ -100,4 +81,8 @@ footer {
         font-size: large;
     }
 
+    iframe {
+        width: 100vw;
+        height: 1050px;
+    }
 }
