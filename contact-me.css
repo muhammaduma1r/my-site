@@ -60,12 +60,15 @@ main {
 }
 
 footer {
-    text-align: center;
-    padding: 5px;
-    font-size: medium;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 5vh;
-    background-color: white;
+    padding: 10px;
+    text-align: center;
     border-top: 1px solid black;
+
 }
 
 @media only screen and (max-width: 600px) {

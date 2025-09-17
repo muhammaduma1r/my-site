@@ -80,11 +80,14 @@ main {
 }
 
 footer {
-    text-align: center;
-    padding: 5px;
-    font-size: medium;
     background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 5vh;
+    padding: 10px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
